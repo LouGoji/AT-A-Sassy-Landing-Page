@@ -1,6 +1,6 @@
 // @forward "utilities";
 @import "utilities";
-@import "config";
+@use "scss/config.scss";
 
 
 %btn {
@@ -18,7 +18,7 @@
 
 .btn-primary {
   @extend %btn;
-  @include set-bg(lighten($primary-color, 10%));
+  @include set-bg($primaryColor);
 }
 
 .btn-secondary {
